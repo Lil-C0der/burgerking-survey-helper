@@ -1,0 +1,14 @@
+{
+  "name": "Do not tell burgerking",
+  "manifest_version": 2,
+  "version": "1.0",
+  "description": "for burgerking survey",
+  "permissions": ["tabs", "http://*/*", "https://*/*"],
+  "browser_action": {},
+  "content_scripts": [
+    {
+      "matches": ["https://tellburgerking.com.cn/*"],
+      "js": ["burgerkingHelper.js"]
+    }
+  ]
+}
