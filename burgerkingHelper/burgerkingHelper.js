@@ -6,7 +6,6 @@ var radios = document.querySelectorAll('input[type=radio]')
 var checkboxes = document.querySelectorAll('input[type=checkbox]')
 var textareas = document.querySelectorAll('textarea')
 
-// 单选题： 默认选中第一个答案
 if (radios && radios.length > 0) {
   console.log('autoselect selecting...')
   var radio1 = radios[0]
@@ -18,7 +17,6 @@ if (radios && radios.length > 0) {
   }
 }
 
-// 多选题： 默认选中第一个答案
 if (checkboxes && checkboxes.length > 0) {
   console.log('autoselect selecting...')
   var checkbox1 = checkboxes[0]
@@ -30,7 +28,6 @@ if (checkboxes && checkboxes.length > 0) {
   }
 }
 
-// 填空题： 默认填入 “感觉挺好的啊， 继续加强就行啦”
 if (textareas && textareas.length > 0) {
   textareas[0].value = '感觉挺好的啊， 继续加强就行啦'
 }
